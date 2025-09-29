@@ -2,47 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=ed    <!-- Footer -->
-    <footer class="footer">
-        <p>
-            © 2025 PixelSurvey — Open‑source project. Made with <span class="heart">♥</span> at TU Delft, Delft, the Netherlands.
-        </p>
-    </footer>
-
-    <script>
-        function toggleMobileMenu() {
-            const navLinks = document.getElementById('navLinks');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            navLinks.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                const navLinks = document.getElementById('navLinks');
-                const menuBtn = document.querySelector('.mobile-menu-btn');
-                
-                navLinks.classList.remove('active');
-                menuBtn.classList.remove('active');
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            const nav = document.querySelector('nav');
-            const navLinks = document.getElementById('navLinks');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            
-            if (!nav.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuBtn.classList.remove('active');
-            }
-        });
-    </script>
-</body>
-</html>   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixelSurvey&nbsp;– YAML-based surveys</title>
 
     <!-- Favicon -->
@@ -71,15 +32,7 @@
             <img src="assets/logo.png" alt="PixelSurvey logo" class="logo-image" />
             <span class="logo-text">PixelSurvey</span>
         </a>
-        
-        <!-- Hamburger menu button (mobile only) -->
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        
-        <div class="nav-links" id="navLinks">
+        <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#features">Features</a>
             <a href="https://github.com/PixelSurvey" target="_blank" rel="noopener">Repository</a>
