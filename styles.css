@@ -418,6 +418,10 @@ nav .nav-links a:hover {
 }
 
 @media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+    
     .hamburger {
         display: block;
     }
@@ -430,28 +434,26 @@ nav .nav-links a:hover {
         background: linear-gradient(135deg, #6D28D9 0%, #9333EA 100%);
         flex-direction: column;
         gap: 0;
-        display: none;
+        display: none !important;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
     }
     
     .nav-links.show {
-        display: flex;
+        display: flex !important;
     }
     
     .nav-links a {
         padding: 1rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         text-align: center;
+        display: block;
     }
     
     .nav-links a:last-child {
         border-bottom: none;
     }
-    
-    nav {
-        position: relative;
-    }
-    
+
     .hero {
         padding: 3rem 1rem;
         margin: 1rem;
@@ -466,9 +468,7 @@ nav .nav-links a:hover {
     .feature-item {
         padding: 2rem;
     }
-}
-
-@media (min-width: 769px) {
+}@media (min-width: 769px) {
     .hero {
         flex-direction: row;
         justify-content: space-between;
