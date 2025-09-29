@@ -122,5 +122,18 @@
             © 2025 PixelSurvey — Open‑source project. Made with <span class="heart">♥</span> at TU Delft, Delft, the Netherlands.
         </p>
     </footer>
+
+    <script>
+        // Close the mobile menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                // Check if the menu is open in mobile view
+                const navLinks = document.querySelector('.nav-links');
+                if (navLinks.classList.contains('show')) {
+                    navLinks.classList.remove('show');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
