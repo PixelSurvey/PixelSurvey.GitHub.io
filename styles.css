@@ -406,38 +406,50 @@ nav .nav-links a:hover {
     50% { transform: scale(1.1); }
 }
 
-/* Responsividad simple */
+/* Simple hamburger menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
 @media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
-        padding: 1rem;
+    .hamburger {
+        display: block;
     }
     
     .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
-        justify-content: center;
-        margin-top: 1rem;
-        flex-wrap: wrap;
-        gap: 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 1rem;
-        border-radius: 8px;
+        background: linear-gradient(135deg, #6D28D9 0%, #9333EA 100%);
+        flex-direction: column;
+        gap: 0;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.show {
+        display: flex;
     }
     
     .nav-links a {
-        font-size: 1rem;
-        font-weight: 600;
-        padding: 0.75rem 1rem;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 6px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        min-width: auto;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
         text-align: center;
     }
     
-    .nav-links a:hover {
-        background: rgba(255, 255, 255, 0.25);
-        opacity: 1;
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    
+    nav {
+        position: relative;
     }
     
     .hero {

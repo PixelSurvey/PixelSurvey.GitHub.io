@@ -7,12 +7,12 @@
     <title>Coming Soon - PixelSurvey</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
     
     
     <!-- Google Font import -->
@@ -48,10 +48,28 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-image {
+            height: 80px;
+            width: auto;
+            margin-bottom: 1rem;
+            filter: brightness(1.1);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-image:hover {
+            transform: scale(1.05);
+        }
+
         .logo {
             font-size: 2rem;
             font-weight: 800;
-            margin-bottom: 2rem;
             letter-spacing: -0.5px;
         }
 
@@ -114,7 +132,10 @@
 </head>
 <body>
     <div class="coming-soon-container">
-        <div class="logo">PixelSurvey</div>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="PixelSurvey Logo" class="logo-image" />
+            <div class="logo">PixelSurvey</div>
+        </div>
         <div class="rocket">🚀</div>
         <h1>Coming Soon!</h1>
         <p>

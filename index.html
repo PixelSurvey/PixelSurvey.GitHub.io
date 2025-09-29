@@ -7,12 +7,12 @@
     <title>PixelSurvey&nbsp;– YAML-based surveys</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
     
 
     <!-- Google Font import -->
@@ -32,6 +32,10 @@
             <img src="assets/logo.png" alt="PixelSurvey logo" class="logo-image" />
             <span class="logo-text">PixelSurvey</span>
         </a>
+        
+        <!-- Simple hamburger for mobile -->
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">☰</button>
+        
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#features">Features</a>
