@@ -21,6 +21,27 @@ body {
     line-height: 1.6;
 }
 
+/* Asegurar que los elementos principales no hereden estilos incorrectos */
+nav, .hero, .features, .call-to-action {
+    color: inherit;
+}
+
+.features, .features * {
+    color: #2D2B3A;
+}
+
+.features h2 {
+    color: #6D28D9 !important;
+}
+
+.features .feature-item h3 {
+    color: #2D2B3A !important;
+}
+
+.features .feature-item p {
+    color: #6B7280 !important;
+}
+
 /* Botones reutilizables */
 .btn {
     padding: 0.75rem 1.5rem;
@@ -374,20 +395,25 @@ nav .nav-links a:hover {
 }
 
 /* Footer */
-.footer {
+footer.footer {
     background: linear-gradient(135deg, #6D28D9 0%, #9333EA 100%);
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 2.5rem;
     text-align: center;
     font-size: 0.9rem;
 }
 
-.footer .heart {
-    color: #F3E8FF;
+footer.footer p {
+    color: #ffffff !important;
+    margin: 0;
+}
+
+footer.footer .heart {
+    color: #F3E8FF !important;
     animation: heartbeat 2s ease-in-out infinite;
 }
 
-.footer .tudelft-logo {
+footer.footer .tudelft-logo {
     height: 1.2rem;
     width: auto;
     margin: 0 0.5rem;
@@ -397,7 +423,7 @@ nav .nav-links a:hover {
     transition: opacity 0.3s ease;
 }
 
-.footer .tudelft-logo:hover {
+footer.footer .tudelft-logo:hover {
     opacity: 1;
 }
 
