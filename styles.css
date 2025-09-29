@@ -426,7 +426,7 @@ nav .nav-links a:hover {
         display: block;
     }
     
-    .nav-links {
+    nav .nav-links {
         position: absolute;
         top: 100%;
         left: 0;
@@ -434,23 +434,23 @@ nav .nav-links a:hover {
         background: linear-gradient(135deg, #6D28D9 0%, #9333EA 100%);
         flex-direction: column;
         gap: 0;
-        display: none !important;
+        display: none;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         z-index: 1000;
     }
     
-    .nav-links.show {
-        display: flex !important;
+    nav .nav-links.show {
+        display: flex;
     }
     
-    .nav-links a {
+    nav .nav-links a {
         padding: 1rem;
         border-bottom: 1px solid rgba(255,255,255,0.1);
         text-align: center;
         display: block;
     }
     
-    .nav-links a:last-child {
+    nav .nav-links a:last-child {
         border-bottom: none;
     }
 
