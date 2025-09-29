@@ -418,12 +418,26 @@ nav .nav-links a:hover {
         justify-content: center;
         margin-top: 1rem;
         flex-wrap: wrap;
-        gap: 0.75rem;
+        gap: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 8px;
     }
     
     .nav-links a {
-        font-size: 0.85rem;
-        padding: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.75rem 1rem;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        min-width: auto;
+        text-align: center;
+    }
+    
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.25);
+        opacity: 1;
     }
     
     .hero {
