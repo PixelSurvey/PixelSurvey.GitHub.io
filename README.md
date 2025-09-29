@@ -1,2 +1,2 @@
-# PixelSurvey-PixelSurvey.GitHub.io
-Homepage for PixelSurvey Project
+# home
+Project homepage of PixelSurvey
